@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<meta charset="utf-8">
+
+<!--cabecera página-->
+<link rel="stylesheet" href="css/estilos.css" />
+
+<!-- estructura base página-->
+<head>
+    <!--Permite uso tildes y ñ-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+    <!--Ajuste página-->
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo página-->
+    <title>Programando</title>
+    <!--Icono página-->
+    <link rel="shortcut icon" href="./images/icono.png" type= "images/x-icon">
+    <!--Importación estilos css-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="2091F9">
+    <!-- Primary Meta Tags -->
+<title>Programando</title>
+<meta name="title" content="Aprende programación desde cero" />
+<meta name="description" content="Aprende programación de manera fácil y rápida desde cero." />
+<!-- Meta Tags Generated with https://metatags.io -->
+    
+    
+</head>
+
+<!--Cuerpo página-->
+<body>
+    <!--Cabecera principal página-->
+    <header class="subhero">
+        <nav class="nav container">
+            <!--Nombre de página web-->
+            <div class="nav__logo">
+                <h2 class="nav__title"> <img src="images/icono.png" width="30px" height="30px"> Programando </h2>
+            </div>
+            <!--Establece menú navegación-->
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="#" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Blog</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Contactos</a></li>
+                <img src="./images/cancel.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Programación Estructurada</h1>
+        </section>
+        
+    </header>
+    <!--Cuerpo de la página-->
+    <main >
+    <!--Primera sección-->
+        <section class="definicion" id="progra_estruct">
+            <div class="definicion__container container">
+                <article class="definicion__body">
+                    <figure class="definicion__picture">
+                        <img src="./images/proest.png" alt="" class="definicion__img">
+                    </figure>
+                    <div class="definicion__text">
+                        <h2 class="subtitle">Fundamentos de la Programación Estructurada</h2>
+                        <p class="paragraph">
+                        La programación estructurada es un paradigma que organiza el código de manera clara y lógica, 
+                        facilitando su comprensión y mantenimiento. Se basa en tres principios fundamentales:
+                        <br><b>Secuencialidad 📜:</b> Las instrucciones se ejecutan en el orden en que aparecen.
+                        <br><b>Selección (Decisión) 🔀:</b> Permite ejecutar diferentes bloques de código según ciertas condiciones (if-else, switch).
+                        <br><b>Iteración (Repetición) 🔁:</b> Utiliza bucles (for, while) para repetir instrucciones hasta cumplir una condición.
+                        <br>Este enfoque evita el uso excesivo de saltos (goto), promoviendo la legibilidad y modularidad del código mediante funciones y estructuras bien definidas.
+                        <br>Es la base de la programación moderna y permite desarrollar software eficiente y organizado.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="ccolor">
+            <div class="ccolor__container container">
+                <h2 class="subtitle">Variable y tipos de Datos</h2>
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <p class="ccolor__review">Las variables son espacios en la memoria de la computadora donde se almacenan valores 
+                        que pueden cambiar durante la ejecución de un programa. Son fundamentales, ya que permiten guardar y manipular información 
+                        de manera eficiente y lógica dentro de un programa.
+                        <br>Los tipos de datos determinan qué tipo de valores puede contener una variable. Los más comunes son:
+                        <br><b>Enteros (int):</b> Números sin decimales (ej. 10, -5, 42).
+                        <br><b>Flotantes (float):</b> Números con decimales (ej. 3.14, -0.5).
+                        <br><b>Caracteres (char):</b> Un solo símbolo o letra (ej. 'A', '9', '?').
+                        <br><b>Cadenas de texto(string):</b> Texto compuesto por varios caracteres (ej. "Hola mundo").
+                        <br><b>Booleanos (bool):</b> Representan valores de verdad (true o false). </p>
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo de Código
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-python">
+# Enteros (int)
+Nota = 10
+# Decimales (float)
+puntos = 9.75
+#Caracteres (char)
+inicial= C
+# Cadenas de texto (str)
+nombre = "Exhonereme Inge"
+# Booleanos (bool)
+es_programador = True
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+        <section class="scolor">
+            <div class="scolor__container container">
+                <h2 class="subtitle">Operaciones básicas con Variables</h2>
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <p class="ccolor__review">Para manejar las variables contamos con tres operaciones fundamentales que permiten la interacción 
+                            entre el usuario y el código. Las variables son espacios en la memoria de la computadora donde se almacenan valores
+                            que pueden cambiar durante la ejecución de un programa. Son fundamentales, ya que permiten guardar y manipular información 
+                            de manera eficiente y lógica dentro de un programa.
+                            <br><b>1️⃣ Asignación de Valores:</b> La asignación es el proceso de almacenar un valor en una variable usando el operador <b>=</b>.
+                            Para esto la variable debe ser declarada con su tipo de dato antes de la asignación.
+                            <br><b>2️⃣ Entrada de Datos (Input)</b> La entrada de datos permite al usuario proporcionar valores a las variables durante la ejecución del programa.
+                            <br><b>3️⃣ Salida de Datos (Output)</b> La salida de datos permite mostrar información al usuario, generalmente usando printf en C o print en Python.
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo de Código
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-c">
+#include <stdio.h>
+int main() {
+    //Declaracion tipo de variable
+    int nota=0;
+    //Entrada de datos
+    printf("Ingresa la nota: ");
+    scanf("%d", &nota);
+    //Salida de datos
+    printf("Hola tu nota es: %d", nota);
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+        <section class="container questions">
+            <h2 class="subtitle">Operadores y Expresiones en Programación</h2>
+            <p class="questions__paragraph">En programación, los operadores son símbolos que permiten realizar cálculos y 
+                comparaciones entre valores. Una expresión es una combinación de variables, valores y operadores que se evalúan para obtener un resultado. 
+                <br>A continuación, exploramos los tipos principales de operadores.
+            </p>
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">1️⃣ Operadores Aritméticos 🧮
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <div class="questions__show">
+                        <table class="table questions__show">
+                            <p class="questions__paragraph">Se utilizan para realizar operaciones matemáticas básicas. <br> </p>
+                            <thead>
+                                <tr>
+                                    <th>Operador</th>
+                                    <th>Descripción</th>
+                                    <th>Ejemplo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="operator">+</span></td>
+                                    <td>Suma</td>
+                                    <td><span class="example">a + b</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">−</span></td>
+                                    <td>Resta</td>
+                                    <td><span class="example">a - b</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">*</span></td>
+                                    <td>Multiplicación</td>
+                                    <td><span class="example">a * b</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">/</span></td>
+                                    <td>División</td>
+                                    <td><span class="example">a / b</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">%</span></td>
+                                    <td>Módulo (resto de la división)</td>
+                                    <td><span class="example">a % b</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">2️⃣ Operadores Relacionales 🔍
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <div class="questions__show">
+                        <table class="table questions__show">
+                            <p class="questions__paragraph">Se usan para comparar valores y devuelven true o false.</p>
+                            <thead>
+                                <tr>
+                                    <th>Operador</th>
+                                    <th>Descripción</th>
+                                    <th>Ejemplo (a=5, b3)</th>
+                                    <th>Resultado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="operator">==</span></td>
+                                    <td>Igual a</td>
+                                    <td><span class="example">a==b</span></td>
+                                    <td><span class="example">false</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">!=</span></td>
+                                    <td>Diferente de</td>
+                                    <td><span class="example">a != b</span></td>
+                                    <td><span class="example">true</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">></span></td>
+                                    <td>Mayor que</td>
+                                    <td><span class="example">a > b</span></td>
+                                    <td><span class="example">true</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator"> < </span></td>
+                                    <td>Menor que</td>
+                                    <td><span class="example">a < b</span></td>
+                                    <td><span class="example">false</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">>=</span></td>
+                                    <td>Mayor o Igual que</td>
+                                    <td><span class="example">a >= b</span></td>
+                                    <td><span class="example">true</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator"><=</span></td>
+                                    <td>Menor o Igual que</td>
+                                    <td><span class="example">a <= b</span></td>
+                                    <td><span class="example">false</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">3️⃣ Operadores Lógicos ⚡
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <div class="questions__show">
+                        <table class="table questions__show">
+                            <p class="questions__paragraph">Se usan para combinar expresiones condicionales.<br> </p>
+                            <thead>
+                                <tr>
+                                    <th>Operador</th>
+                                    <th>Descripción</th>
+                                    <th>Ejemplo</th>
+                                    <th>Resultado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AND</td>
+                                    <td>Ambas condiciones deben ser true</td>
+                                    <td><span class="example">(a > 3) && (b < 5)</span></td>
+                                    <td><span class="example">True</span></td>
+                                </tr>
+                                <tr>
+                                    <td>OR</td>
+                                    <td>Una de las condiciones deben ser true</td>
+                                    <td><span class="example">`</span></td>
+                                    <td><span class="example">True</span></td>
+                                </tr>
+                                <tr>
+                                    <td>NOT</td>
+                                    <td>Niega ambas condiciones</td>
+                                    <td><span class="example">!(a > 3)</span></td>
+                                    <td><span class="example">false</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="scolor">
+            <div class="scolor__container container">
+                <h2 class="subtitle">Estructuras de Control de Flujo</h2>
+                <p class="questions__paragraph">Las estructuras de control de flujo permiten modificar la secuencia en la que se ejecutan las instrucciones de un programa. 
+                    Se dividen en estructuras condicionales (decisión) y estructuras repetitivas (bucles o iteraciones).
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle">Estructuras Condicionales (Decisión)</h2>
+                        <p class="ccolor__review">
+                            <br><b>Condiciones simples y múltiples.-</b>
+                            Se usan cuando se necesita evaluar una condición y ejecutar instrucciones según el resultado. <br>
+                            <span class="operator">If</span> es el condicional principal con la cual se da inicio al bucle. 
+                            Si deseamos incluir otras condicionales utilizaremos, dependiendo el lenguaje de programación, las siguientes variables 
+                            <span class="operator">else-if</span>, <span class="operator">elif</span>. En el momento en que una condición se evalúe como true , el resto de condiciones serán ignoradas.
+                            En el caso de que ninguna condicional se cumpla encontramos la condicional <span class="operator">else</span>.
+                            <br>
+                        </p>
+                    </div>
+                    <section class="ccolor__card">
+                        <div class="card">
+                            <div class="card-header">
+                                Ejemplo de Código
+                                <button class="copy-btn" onclick="copyCode()">📋</button>
+                            </div>
+                            <div class="code-container">
+                                <pre><code class="language-c">
+#include <stdio.h>
+
+int main() {
+    int nota;
+    printf("Ingresa tu calificación: ");
+    scanf("%d", & nota);
+
+    if (nota >= 90) {
+        printf("Excelente\n");
+    } else if (nota >= 70) {
+        printf("Aprobado\n");
+    } else {
+        printf("Reprobado\n");
+    }
+    return 0;
+}
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </section>
+                <section class="ccolor__body">
+                    <section class="ccolor__card">
+                        <div class="card">
+                            <div class="card-header">
+                                Ejemplo de Código
+                                <button class="copy-btn" onclick="copyCode()">📋</button>
+                            </div>
+                            <div class="code-container">
+                                <pre><code class="language-c">
+#include <stdio.h>
+
+int main() {
+    int opcion;
+    printf("Seleccione un día: ");
+    scanf("%d", &dia);
+
+    switch (dia) {
+        case 1:
+            printf("Lunes\n");
+            break;
+        case 2:
+            printf("Martes\n");
+            break;
+        case 3:
+            printf("Miércoles\n");
+            break;
+        default:
+            printf("Opción no válida\n");
+    }
+    return 0;
+}                                        
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="ccolor__texts">
+                        <p class="ccolor__review">
+                            <br><b>Selección múltiple <span class="operator">Switch Case</span> .-</b>
+                            Es útil cuando se deben evaluar múltiples valores posibles de una variable
+                            <br>Switch compara opcion con cada case. break evita que se ejecuten los siguientes casos.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="ccolor">
+            <div class="scolor__container container">
+                    <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle"> Estructuras Repetitivas (Bucles o Iteraciones) 🔁</h2>
+                        <p class="questions__paragraph">Permiten ejecutar un bloque de código varias veces mientras se cumpla una condición. Si es falsa, el bucle termina.</p>
+                        <p class="ccolor__review">
+                            <br><b><span class="operator">While</span>Repetición con condición inicial.-</b>
+                            Verifica la condición antes de cada iteración y solo se ejecuta mientras la condición sea true.
+                            <br><b><span class="operator">Do-While</span> Repetición con ejecución garantizada.-</b> 
+                            Ejecuta el bloque al menos una vez, aunque la condición sea falsa desde el inicio.
+                            </p>
+                    </div>
+                    <section class="ccolor__card">
+                        <div class="card">
+                            <div class="card-header">
+                                Ejemplo de Código
+                                <button class="copy-btn" onclick="copyCode()">📋</button>
+                            </div>
+                            <div class="code-container">
+                                <pre><code class="language-c">
+#include <stdio.h>
+
+int main() {
+    int contador = 1;
+    while (contador <= 5) {
+// Se ejecuta mientras contador sea 
+// menor o igual a 5
+       printf("Iteración %d\n", contador);
+       contador++;
+// Incrementa contador en 1
+    }
+
+    return 0;
+}
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </section>
+                <section class="ccolor__body">
+                    <section class="ccolor__card">
+                        <div class="card">
+                            <div class="card-header">
+                                Ejemplo de Código
+                                <button class="copy-btn" onclick="copyCode()">📋</button>
+                            </div>
+                            <div class="code-container">
+                                <pre><code class="language-c">
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5) {
+            printf("Se detiene en 5\n");
+            break;  // Sale del bucle
+        }
+        printf("%d\n", i);
+    }
+    return 0;
+}
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="ccolor__texts">
+                        <p class="ccolor__review">
+                            <br><b><span class="operator">For</span> Bucle con contador definido.- </b>Se usa cuando se conoce el número exacto de iteraciones.
+                            <br><b>Control de Bucles: <span class="operator">Break</span> y <span class="operator">Continue</span>: </b>
+                            <br><span class="operator">Break</span> Detiene el bucle antes de que se cumpla la condición.
+                            <br><span class="operator">Continue</span> Salta una iteración y pasa a la siguiente.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Programando</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Programación estructurada</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">POO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" id="miFormulario">
+                <h2 class="footer__newsletter">Dudas o Sugerencias</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" id="email" required>
+                    <input type="text" placeholder="Nombre:" class="footer__input" id="nombre" required>
+                    <input type="text" placeholder="Comentario:" class="footer__input" id="comentario" required>
+                    <input type="submit" value="Enviar" class="cta">
+                </div>
+            </form>
+        
+            <script>
+                // Capturamos el evento submit y evitamos el comportamiento por defecto
+                document.getElementById("miFormulario").addEventListener("submit", function(event) {
+                    event.preventDefault();
+        
+                    // Obtenemos los valores de cada campo
+                    const email = document.getElementById("email").value;
+                    const nombre = document.getElementById("nombre").value;
+                    const comentario = document.getElementById("comentario").value;
+                    
+        
+                    // Creamos un objeto con la información
+                    const datos = {
+                        email: email,
+                        nombre: nombre,
+                        comentario: comentario
+                        
+                    };
+        
+                    // Guardamos el objeto en localStorage convertido a JSON
+                    localStorage.setItem("contacto", JSON.stringify(datos));
+        
+                    // Mostramos un mensaje de confirmación
+                    alert("Datos guardados en LocalStorage.");
+                });
+            </script>
+            
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/instagram.png" class="footer__img"></a>
+                <a href="https://github.com/CarlaCp007" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/github.png" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Carla Cuzco</h3>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script>
+        function copyCode() {
+            const code = document.querySelector("code").innerText;
+            navigator.clipboard.writeText(code);
+            alert("Código copiado al portapapeles!");
+        }
+    </script>
+    <!--Llamada archivo javascript-->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/questions.js"></script>
+
+
+</body>
+
+
+</html>

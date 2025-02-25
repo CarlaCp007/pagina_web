@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Metadatos y enlaces a hojas de estilo -->
+<head>
+    <!-- Permite el uso de caracteres especiales como tildes y eñe -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+    <!-- Ajuste de vista para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>Programando</title>
+    
+    <!-- Favicon (icono de la pestaña del navegador) -->
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    
+    <!-- Enlace a hojas de estilo externas -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+    <!-- Color del tema -->
+    <meta name="theme-color" content="2091F9">
+    
+    <!-- Meta etiquetas SEO -->
+    <meta name="title" content="Aprende programación desde cero" />
+    <meta name="description" content="Aprende programación de manera fácil y rápida desde cero." />
+</head>
+
+<body>
+    <!-- Cabecera principal de la página -->
+    <header class="subhero">
+        <nav class="nav container">
+            <!-- Logo y título de la página -->
+            <div class="nav__logo">
+                <h2 class="nav__title"> <img src="images/icono.png" width="30px" height="30px"> Programando </h2>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="#" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Blog</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Contactos</a></li>
+                <img src="./images/cancel.svg" class="nav__close">
+            </ul>
+            
+            <!-- Botón de menú para dispositivos móviles -->
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        
+        <!-- Título principal de la sección -->
+        <section class="hero__container container">
+            <h1 class="hero__title">Programación Orientada a Objetos</h1>
+        </section>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <section class="container about" >
+            <article>
+            <h2 class="subtitle">Introducción a la Programación Orientada a Objetos (POO)</h2>
+            <p class="paragraph">La Programación Orientada a Objetos (POO) es un paradigma de programación basado en 
+                la organización del código en clases y objetos, facilitando la modularidad y reutilización del código.
+                <br>A diferencia de la programación estructurada, que se basa en secuencias de instrucciones y funciones, la POO modela elementos del mundo real como objetos, 
+                lo que hace que los programas sean más organizados, escalables y fáciles de mantener. 
+            </p>
+            </article>
+
+            <div class="definicion__main">
+                <article class="definicion__icons">
+                    <h3 class="about__title"> Principales características de la POO:</h3>
+                    <p class="paragrah"><b>Encapsulamiento 🛡️:</b> Protege los datos y métodos dentro de una clase.
+                        <br><b>Herencia 👪:</b> Permite que una clase derive características de otra.
+                        <br><b>Polimorfismo 🔄:</b> Un mismo método puede comportarse de diferentes maneras.
+                        <br><b>Abstracción 🎭:</b> Oculta la complejidad mostrando solo lo esencial.</p>
+                    <a href="#" class="cta">Empecemos</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="ccolor">
+            <div class="ccolor__container container">
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle">1️⃣ Clases y Objetos</h2>
+                        <p class="ccolor__review">Una clase es una plantilla o molde que define las características (atributos) 
+                        y comportamientos (métodos) de un conjunto de objetos. Un objeto es una instancia concreta de una clase. </p>
+                        <br><br><b>📌 Explicación:
+
+                        <br>class Persona:</b> Define una clase llamada Persona.
+                        <br><b>__init__:</b> Método especial para inicializar atributos (nombre, edad).
+                        <br><b>saludar():</b> Método que imprime un mensaje.
+                        <br><b>persona1 = Persona("Carlos", 30):</b> Crea un objeto con valores específicos.
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo en Python
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-python">
+class Persona:
+def __init__(self, nombre, edad):
+    self.nombre = nombre
+    self.edad = edad
+
+def saludar(self):
+    print(f"Hola,mi nombre es 
+    {self.nombre}y tengo {self.edad}años.")
+
+# Crear un objeto de la clase Persona
+persona1 = Persona("Carlos", 30)
+persona1.saludar()
+
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+        <section class="scolor">
+            <div class="scolor__container container">
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle">2️⃣ Encapsulación 🛡️</h2>
+                        <p class="ccolor__review"> La encapsulación protege los datos de una clase, limitando el acceso directo a sus atributos y métodos.
+                        <br>Se implementa con modificadores de acceso:
+                        <br><table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Modificador</th>
+                                    <th>Descripción</th>
+                                    <th>Notación en Python</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="operator">public</span></td>
+                                    <td>Accesible desde cualquier parte</td>
+                                    <td><span class="example">self.nombre</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">private</span></td>
+                                    <td>Accesible solo dentro de la clase</td>
+                                    <td><span class="example">self.__nombre</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="operator">protected</span></td>
+                                    <td>Accesible dentro de la clase y subclases</td>
+                                    <td><span class="example">self._nombre</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo de Código
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-python">
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        # Atributo privado
+        self.__saldo = saldo  
+
+    def depositar(self, monto):
+        self.__saldo += monto
+
+    def obtener_saldo(self):
+        return self.__saldo
+
+# Crear objeto
+#Acceder a métodos encapsulados
+cuenta = CuentaBancaria("Ana", 1000)
+cuenta.depositar(500)
+print(cuenta.obtener_saldo()) 
+# Salida: 1500
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+        <section class="ccolor">
+            <div class="ccolor__container container">
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle">3️⃣ Herencia 👪</h2>
+                        <p class="ccolor__review">La herencia permite que una clase (hija o subclase) herede atributos y métodos de otra clase 
+                        (padre o superclase), evitando la repetición de código.
+                        <br>
+                        <br><b>📌 Explicación:</b>
+
+                        <br><b>class Perro(Animal):</b> Perro hereda atributos y métodos de Animal.
+                        <br><b>hacer_sonido(): </b> sobrescribe el método de la clase padre.
+                        </p>
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo de Código
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-python">
+# Enteros (int)
+Nota = 10
+# Decimales (float)
+puntos = 9.75
+#Caracteres (char)
+inicial= C
+# Cadenas de texto (str)
+nombre = "Exhonereme Inge"
+# Booleanos (bool)
+es_programador = True
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+        <section class="scolor">
+            <div class="scolor__container container">
+                <section class="ccolor__body">
+                    <div class="ccolor__texts">
+                        <h2 class="subtitle">4️⃣ Polimorfismo 🔄</h2>
+                        <p class="ccolor__review">El polimorfismo permite que diferentes clases utilicen un mismo método con comportamientos distintos. Puede darse de dos formas:
+                            <br><b>1️⃣ Sobrecarga de métodos::</b> Un mismo método con diferentes parámetros.
+                            <br><b>2️⃣ Sobreescritura de métodos:</b> Una subclase redefine un método de la superclase.
+                            <br><b>📌 Explicación:
+                                </b>
+                                <br>mover() tiene un comportamiento distinto en cada clase.
+                                <br>Se puede usar un mismo método (mover()) en distintos tipos de objetos (Coche, Barco).
+                        </p>
+                    </div>
+                <section class="ccolor__card">
+                    <div class="card">
+                        <div class="card-header">
+                            Ejemplo de Código
+                            <button class="copy-btn" onclick="copyCode()">📋</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code class="language-python">
+class Vehiculo:
+    def mover(self):
+        print("El vehículo se mueve")
+
+class Coche(Vehiculo):
+    def mover(self):
+        print("El coche 
+        avanza en la carretera")
+
+class Barco(Vehiculo):
+    def mover(self):
+        print("El barco 
+        navega en el agua")
+
+# Usando polimorfismo
+vehiculos = [Coche(), Barco()]
+
+for v in vehiculos:
+    v.mover()
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Programando</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items"><a href="#" class="nav__links">Inicio</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Programación estructurada</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">POO</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Blog</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Contactos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Formulario de contacto -->
+            <form class="footer__form" id="miFormulario">
+                <h2 class="footer__newsletter">Dudas o Sugerencias</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" id="email" required>
+                    <input type="text" placeholder="Nombre:" class="footer__input" id="nombre" required>
+                    <input type="text" placeholder="Comentario:" class="footer__input" id="comentario" required>
+                    <input type="submit" value="Enviar" class="cta">
+                </div>
+            </form>
+        </section>
+    </footer>
+
+    <!-- Scripts para interactividad -->
+    <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const nombre = document.getElementById("nombre").value;
+            const comentario = document.getElementById("comentario").value;
+            
+            const datos = { email, nombre, comentario };
+            localStorage.setItem("contacto", JSON.stringify(datos));
+            alert("Datos guardados en LocalStorage.");
+        });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script>
+    function copyCode() {
+        const code = document.querySelector("code").innerText;
+        navigator.clipboard.writeText(code);
+        alert("Código copiado al portapapeles!");
+    }
+    </script>
+    <!--Llamada archivo javascript-->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<meta charset="utf-8">
+
+<!--cabecera página-->
+<link rel="stylesheet" href="css/estilos.css" />
+
+<!-- estructura base página-->
+<head>
+    <!--Permite uso tildes y ñ-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+    <!--Ajuste página-->
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo página-->
+    <title>Programando</title>
+    <!--Icono página-->
+    <link rel="shortcut icon" href="./images/icono.png" type= "images/x-icon">
+    <!--Importación estilos css-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="2091F9">
+    <!-- Primary Meta Tags -->
+<title>Programando</title>
+<meta name="title" content="Aprende programación desde cero" />
+<meta name="description" content="Aprende programación de manera fácil y rápida desde cero." />
+<!-- Meta Tags Generated with https://metatags.io -->
+    
+    
+</head>
+
+<!--Cuerpo página-->
+<body>
+    <!--Cabecera principal página-->
+    <header class="hero">
+        <nav class="nav container">
+            <!--Nombre de página web-->
+            <div class="nav__logo">
+                <h2 class="nav__title"> <img src="images/icono.png" width="30px" height="30px"> Programando </h2>
+            </div>
+            <!--Establece menú navegación-->
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="#" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Blog</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Contactos</a></li>
+                <img src="./images/cancel.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Programando Ando</h1>
+            <p class="hero__paragraph">Hoy aprenderás los conceptos más importantes de Programación de una vez por todas, 
+                una vez que termines serás capaz de crear un código básico con tu primer programa.</p>
+            <a href="#Iniciar" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about" id="Iniciar">
+            <article>
+            <h2 class="subtitle">¿Qué aprenderás hoy?</h2>
+            <p class="paragraph">La programación es el proceso de escribir instrucciones para que una computadora realice tareas específicas. 
+                Es una habilidad esencial en la era digital, permitiendo crear desde simples páginas web hasta aplicaciones complejas. 
+                Aprender a programar desarrolla el pensamiento lógico y la resolución de problemas. En esta sección, descubrirás los fundamentos de la programación de manera sencilla y práctica, ideal para principiantes. 
+                <br><b>¡Empieza tu camino en el mundo del código hoy mismo!</b>
+            </p>
+            </article>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <h3 class="about__title"><img src="images/arbol.svg" width="40px" height="40px"> Programación estructurada</h3>
+                    <p class="paragrah">Conceptos básicos que te ayudarán a trabajar en cualquier lenguaje de programación</p>
+                    <a href="#" class="cta">Empecemos</a>
+                </article>
+
+                <article class="about__icons">
+                    <h3 class="about__title"><img src="images/terminal.svg" width="40px" height="40px"> Programación orientada a objetos</h3>
+                    <p class="paragrah">Vamos más alla, organiza tu código en clases, objetos, herencia y polimorfismo.</p>
+                    <a href="#" class="cta">Vamos a ello</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Programando</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Programación estructurada</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">POO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" id="miFormulario">
+                <h2 class="footer__newsletter">Dudas o Sugerencias</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" id="email" required>
+                    <input type="text" placeholder="Nombre:" class="footer__input" id="nombre" required>
+                    <input type="text" placeholder="Comentario:" class="footer__input" id="comentario" required>
+                    <input type="submit" value="Enviar" class="cta">
+                </div>
+            </form>
+        
+            <script>
+                // Capturamos el evento submit y evitamos el comportamiento por defecto
+                document.getElementById("miFormulario").addEventListener("submit", function(event) {
+                    event.preventDefault();
+        
+                    // Obtenemos los valores de cada campo
+                    const email = document.getElementById("email").value;
+                    const nombre = document.getElementById("nombre").value;
+                    const comentario = document.getElementById("comentario").value;
+                    
+        
+                    // Creamos un objeto con la información
+                    const datos = {
+                        email: email,
+                        nombre: nombre,
+                        comentario: comentario
+                        
+                    };
+        
+                    // Guardamos el objeto en localStorage convertido a JSON
+                    localStorage.setItem("contacto", JSON.stringify(datos));
+        
+                    // Mostramos un mensaje de confirmación
+                    alert("Datos guardados en LocalStorage.");
+                });
+            </script>
+            
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/instagram.png" class="footer__img"></a>
+                <a href="https://github.com/CarlaCp007" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/github.png" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Carla Cuzco</h3>
+        </section>
+    </footer>
+
+
+    <!--Llamada archivo javascript-->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/questions.js"></script>
+
+
+</body>
+
+
+</html>
