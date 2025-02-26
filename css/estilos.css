@@ -216,7 +216,7 @@ body{
 /* Footer */
 
 .footer{
-    background-color: rgb(33, 21, 117);
+    background-color: rgb(16, 8, 67);
 }
 
 .footer__title{
@@ -945,8 +945,6 @@ td {
     .footer__img {
         width: 25px; /* Reduce aún más el tamaño de los iconos */
     }
-
-    
 
     .footer__copy {
         font-size: 0.8rem;
