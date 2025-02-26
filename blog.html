@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Metadatos y enlaces a hojas de estilo -->
+<head>
+    <!-- Permite el uso de caracteres especiales como tildes y eñe -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+    <!-- Ajuste de vista para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>Programando</title>
+    
+    <!-- Favicon (icono de la pestaña del navegador) -->
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    
+    <!-- Enlace a hojas de estilo externas -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+    <!-- Color del tema -->
+    <meta name="theme-color" content="2091F9">
+    
+    <!-- Meta etiquetas SEO -->
+    <meta name="title" content="Aprende programación desde cero" />
+    <meta name="description" content="Aprende programación de manera fácil y rápida desde cero." />
+</head>
+
+<body>
+    <!-- Cabecera principal de la página -->
+    <header class="subhero">
+        <nav class="nav container">
+            <!-- Logo y título de la página -->
+            <div class="nav__logo">
+                <h2 class="nav__title"> <img src="images/icono.png" width="30px" height="30px"> Programando </h2>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="progra_estruc.html" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="poo.html" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="blog.html" class="nav__link">Blog</a></li>
+                <img src="./images/cancel.svg" class="nav__close">
+            </ul>
+            
+            <!-- Botón de menú para dispositivos móviles -->
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        
+        <!-- Título principal de la sección -->
+        <section class="hero__container container">
+            <h1 class="hero__title">Información Referencial</h1>
+        </section>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <section class="container video">
+            <article>
+            <h2 class="subtitle">¿Con ganas de más?</h2>
+            <p class="paragraph">Te comparto algunos videos que me han sido de utilidad para continuar mi camino en la programación,
+                y que de seguro despejarán tus dudas y le abrirán el paso a tu mente para nuevas ideas.</p>
+            </article>
+
+            <div class="video__main">
+                <article class="video__icons">
+                    <h3 class="about__title"> ¿Por dónde empezar?</h3>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/m3gEAUsYiJk?si=3A816Z1t-omxARRw" 
+                    title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
+
+                <article class="video__icons">
+                    <h3 class="about__title"> Programación estructurada</h3>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/hcuvB58hwlE?si=GmGwtag68g10AJ5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+
+                <article class="video__icons">
+                    <h3 class="about__title"> POO</h3>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/DlphYPc_HKk?si=UYIu1ShjbZe6F-Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+
+                <article class="video__icons">
+                    <h3 class="about__title"> ¿Qué lenguaje deberías escoger?</h3>
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/QyrBQVR78UM?si=hKTpNfHQ7ozKtesX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+
+            </div>
+        </section>
+        
+        <section class="comment ccolor">
+            <div class="comment__box container">
+                <h3 class="subtitle">Dudas o Sugerencias</h3>
+                <form class="comment__form" action="https://formspree.io/f/myzkqvkq" method="post">
+                    <input type="text" placeholder="Nombre" name="message">
+                    <input type="email" placeholder="Email" name="email">
+                    <textarea rows="5" placeholder="Comentario:" name="message"></textarea>
+                    <button type="submit" class="cta">Enviar</button>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Programando</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="progra_estruc.html" class="nav__links">Programación estructurada</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="poo.html" class="nav__links">POO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="blog.html" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            
+            
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/instagram.png" class="footer__img"></a>
+                <a href="https://github.com/CarlaCp007" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/github.png" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Carla Cuzco</h3>
+        </section>
+    </footer>
+
+    <!-- Scripts para interactividad -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script>
+    function copyCode() {
+        const code = document.querySelector("code").innerText;
+        navigator.clipboard.writeText(code);
+        alert("Código copiado al portapapeles!");
+    }
+    </script>
+    <!--Llamada archivo javascript-->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="./js/questions.js"></script>
+</body>
+</html>

@@ -38,11 +38,10 @@
             
             <!-- Menú de navegación -->
             <ul class="nav__link nav__link--menu">
-                <li class="nav__items"><a href="#" class="nav__link">Inicio</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Programación Estructurada</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">POO</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Blog</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Contactos</a></li>
+                <li class="nav__items"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="progra_estruc.html" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="poo.html" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="blog.html" class="nav__link">Blog</a></li>
                 <img src="./images/cancel.svg" class="nav__close">
             </ul>
             
@@ -77,12 +76,12 @@
                         <br><b>Herencia 👪:</b> Permite que una clase derive características de otra.
                         <br><b>Polimorfismo 🔄:</b> Un mismo método puede comportarse de diferentes maneras.
                         <br><b>Abstracción 🎭:</b> Oculta la complejidad mostrando solo lo esencial.</p>
-                    <a href="#" class="cta">Empecemos</a>
+                    <a href="#cpoo" class="cta">Empecemos</a>
                 </article>
             </div>
         </section>
 
-        <section class="ccolor">
+        <section class="ccolor" id="cpoo">
             <div class="ccolor__container container">
                 <section class="ccolor__body">
                     <div class="ccolor__texts">
@@ -291,41 +290,46 @@ for v in vehiculos:
         <section class="footer__container container">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Programando</h2>
+
                 <ul class="nav__link nav__link--footer">
-                    <li class="nav__items"><a href="#" class="nav__links">Inicio</a></li>
-                    <li class="nav__items"><a href="#" class="nav__links">Programación estructurada</a></li>
-                    <li class="nav__items"><a href="#" class="nav__links">POO</a></li>
-                    <li class="nav__items"><a href="#" class="nav__links">Blog</a></li>
-                    <li class="nav__items"><a href="#" class="nav__links">Contactos</a></li>
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="progra_estruc.html" class="nav__links">Programación estructurada</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="poo.html" class="nav__links">POO</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="blog.html" class="nav__links">Blog</a>
+                    </li>
                 </ul>
             </nav>
 
-            <!-- Formulario de contacto -->
-            <form class="footer__form" id="miFormulario">
+            <form class="footer__form" id="miFormulario" action="https://formspree.io/f/myzkqvkq" method="post">
                 <h2 class="footer__newsletter">Dudas o Sugerencias</h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" id="email" required>
-                    <input type="text" placeholder="Nombre:" class="footer__input" id="nombre" required>
-                    <input type="text" placeholder="Comentario:" class="footer__input" id="comentario" required>
-                    <input type="submit" value="Enviar" class="cta">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email" required>
+                    <input type="text" placeholder="Nombre:" class="footer__input" name="message" required>
+                    <textarea rows="5" placeholder="Comentario:" name="message" required></textarea>
+                    <button type="submit" class="cta">Enviar</button>
                 </div>
             </form>
+
+            
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/instagram.png" class="footer__img"></a>
+                <a href="https://github.com/CarlaCp007" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./images/github.png" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Carla Cuzco</h3>
         </section>
     </footer>
-
     <!-- Scripts para interactividad -->
-    <script>
-        document.getElementById("miFormulario").addEventListener("submit", function(event) {
-            event.preventDefault();
-            const email = document.getElementById("email").value;
-            const nombre = document.getElementById("nombre").value;
-            const comentario = document.getElementById("comentario").value;
-            
-            const datos = { email, nombre, comentario };
-            localStorage.setItem("contacto", JSON.stringify(datos));
-            alert("Datos guardados en LocalStorage.");
-        });
-    </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script>

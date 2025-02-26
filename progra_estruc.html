@@ -42,11 +42,10 @@
             </div>
             <!--Establece menú navegación-->
             <ul class="nav__link nav__link--menu">
-                <li class="nav__items"><a href="#" class="nav__link">Inicio</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Programación Estructurada</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">POO</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Blog</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">Contactos</a></li>
+                <li class="nav__items"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__items"><a href="progra_estruc.html" class="nav__link">Programación Estructurada</a></li>
+                <li class="nav__items"><a href="poo.html" class="nav__link">POO</a></li>
+                <li class="nav__items"><a href="blog.html" class="nav__link">Blog</a></li>
                 <img src="./images/cancel.svg" class="nav__close">
             </ul>
             <div class="nav__menu">
@@ -505,58 +504,29 @@ int main() {
 
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
+                        <a href="index.html" class="nav__links">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Programación estructurada</a>
+                        <a href="progra_estruc.html" class="nav__links">Programación estructurada</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">POO</a>
+                        <a href="poo.html" class="nav__links">POO</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Contactos</a>
+                        <a href="blog.html" class="nav__links">Blog</a>
                     </li>
                 </ul>
             </nav>
 
-            <form class="footer__form" id="miFormulario">
+            <form class="footer__form" id="miFormulario" action="https://formspree.io/f/myzkqvkq" method="post">
                 <h2 class="footer__newsletter">Dudas o Sugerencias</h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" id="email" required>
-                    <input type="text" placeholder="Nombre:" class="footer__input" id="nombre" required>
-                    <input type="text" placeholder="Comentario:" class="footer__input" id="comentario" required>
-                    <input type="submit" value="Enviar" class="cta">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email" required>
+                    <input type="text" placeholder="Nombre:" class="footer__input" name="message" required>
+                    <textarea rows="5" placeholder="Comentario:" name="message" required></textarea>
+                    <button type="submit" class="cta">Enviar</button>
                 </div>
             </form>
-        
-            <script>
-                // Capturamos el evento submit y evitamos el comportamiento por defecto
-                document.getElementById("miFormulario").addEventListener("submit", function(event) {
-                    event.preventDefault();
-        
-                    // Obtenemos los valores de cada campo
-                    const email = document.getElementById("email").value;
-                    const nombre = document.getElementById("nombre").value;
-                    const comentario = document.getElementById("comentario").value;
-                    
-        
-                    // Creamos un objeto con la información
-                    const datos = {
-                        email: email,
-                        nombre: nombre,
-                        comentario: comentario
-                        
-                    };
-        
-                    // Guardamos el objeto en localStorage convertido a JSON
-                    localStorage.setItem("contacto", JSON.stringify(datos));
-        
-                    // Mostramos un mensaje de confirmación
-                    alert("Datos guardados en LocalStorage.");
-                });
             </script>
             
         </section>

@@ -588,6 +588,69 @@ td {
     display: inline-block;
 }
 
+/*Cuarta página*/
+
+.video{
+    text-align: center;
+}
+
+
+.video__main {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(460px, auto));
+}
+
+
+.video__icons {
+    flex-basis: 31%;
+    background: rgb(6, 119, 163);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 460px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 0.5s;
+    color: aliceblue;
+}
+
+.video__icons:hover{
+    box-shadow: 0 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.comment__box{
+    border: 1px;
+    margin: 20px 20px;
+    padding: 10px 20px ;
+    padding-inline: 30% 10%;    
+}
+
+.comment__form input, .comment__form textarea{
+    width: 60%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f5f6fa;
+}
+
+.comment__form button{
+    margin: 10px 0;
+}
+
+
 /* Media queries */
 
 @media (max-width:800px){
@@ -727,6 +790,16 @@ td {
         font-size: 14px; /* Ajusta el botón de copiar */
     }
 
+    .video__main {
+        grid-template-columns: 1fr; /* Pasa a una sola columna */
+        gap: 2em; /* Reduce el espacio entre los elementos */
+    }
+
+    .video__icons {
+        width: 90%; /* Reduce el tamaño de las tarjetas */
+        height: auto; /* Permite que la altura se adapte al contenido */
+        padding: 15px;
+    }
 }
 
 
@@ -839,6 +912,18 @@ td {
 
     .copy-btn {
         font-size: 12px; /* Reduce el tamaño del botón de copiar */
+    }
+
+    .video__main {
+        grid-template-columns: 1fr; /* Mantiene una sola columna */
+        gap: 1.5em; /* Reduce aún más el espacio entre elementos */
+    }
+
+    .video__icons {
+        width: 100%; /* Ocupa el ancho completo de la pantalla */
+        height: auto;
+        padding: 10px;
+        text-align: center; /* Centra el contenido */
     }
 
 }
