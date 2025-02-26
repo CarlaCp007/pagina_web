@@ -718,17 +718,48 @@ td {
         justify-self: center;
     }
 
-    .nav--footer{
-        width: 100%;
-        justify-items: center;
+    .footer__container {
+        flex-direction: column; /* Cambia la disposición a una sola columna */
+        text-align: center; /* Centra el texto */
+        padding-bottom: 40px; /* Reduce el espacio inferior */
     }
 
-    .nav__link--footer{
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
+    .footer__title {
+        font-size: 2.5rem; /* Reduce el tamaño del título */
+        margin-bottom: 20px;
     }
 
+    .nav--footer {
+        grid-auto-flow: row;
+        gap: 0.8em; /* Reduce la separación entre elementos */
+    }
+
+    .footer__inputs {
+        align-items: center;
+    }
+
+    .footer__input {
+        width: 80%; /* Ajusta los inputs a un 80% del ancho */
+        height: 38px; /* Aumenta la altura para mejorar accesibilidad */
+        font-size: 1rem;
+    }
+
+    .footer__icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer__img {
+        width: 28px; /* Reduce ligeramente el tamaño de los iconos */
+    }
+
+    .footer__copy {
+        font-size: 0.9rem;
+    }
+
+    
+    
     .definicion__container{
         grid-template-columns: 30px 1fr 30px;
     }
@@ -750,10 +781,6 @@ td {
     .footer__form{
         width: 100%;
         justify-content: space-evenly;
-    }
-
-    .footer__input{
-        flex: 1;
     }
 
     .ccolor__body {
@@ -821,19 +848,7 @@ td {
         width: 90%;
     }
 
-    .footer__title{
-        justify-self: start;
-        margin-bottom: 15px;
-    }
-
-    .nav--footer{
-        padding-bottom: 60px;
-    }
-
-    .nav__link--footer{
-        justify-content: space-between;
-    }
-
+    
     .definicion{
         --padding-container: 60px 0;
     }
@@ -843,25 +858,7 @@ td {
         gap: .9em;
     }
 
-    .footer__inputs{
-        flex-wrap: wrap;
-    }
-
-    .footer__input{
-        flex-basis: 100%;
-        margin: 0;
-        margin-bottom: 16px;
-    }
-
-    .footer__submit{
-        margin-right: auto;
-        margin-left: 0;
-        
-
-        margin:0;
-        width: 100%;
-        
-    }
+    
     .ccolor__body {
         grid-template-columns: 1fr; /* Mantiene el stack en una sola columna */
         gap: 1em; /* Reduce la separación para mejor visualización */
@@ -924,6 +921,34 @@ td {
         height: auto;
         padding: 10px;
         text-align: center; /* Centra el contenido */
+    }
+
+    .footer__container {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .footer__title {
+        font-size: 2rem; /* Reduce aún más el tamaño del título */
+    }
+
+    .footer__input {
+        width: 100%; /* Hace que los inputs ocupen el 100% del ancho */
+        height: 36px;
+    }
+
+    .footer__icons {
+        flex-direction: column; /* Acomoda los íconos en una columna */
+        gap: 10px;
+    }
+
+    .footer__img {
+        width: 25px; /* Reduce aún más el tamaño de los iconos */
+    }
+
+    .footer__copy {
+        font-size: 0.8rem;
+        padding: 10px 15px;
     }
 
 }
