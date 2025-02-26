@@ -13,7 +13,7 @@ La página web ha sido diseñada siguiendo las mejores prácticas de desarrollo 
 - **Front-end:** Utiliza **HTML, CSS y JavaScript**  para una experiencia de usuario dinámica e interactiva.
 - **Estilos:** Se ha implementado **Tailwind CSS** para un diseño moderno y responsivo.
 - **Despliegue:** Se puede alojar en plataformas como **Vercel, Netlify o Heroku**.
-- **Hosting:** Se ha alojado en infinityfree http://programanding.kesug.com/blog.html
+- **Hosting:** Se ha alojado en github https://carlacp007.github.io/pagina_web/
 
 ---
 
